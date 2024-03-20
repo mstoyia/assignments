@@ -12,7 +12,7 @@ public class Change {
         System.out.println("Enter US coins: ");
     
         double coinsEntered = input.nextDouble();
-        
+        input.close();
         
         int numQuarter = (int) (coinsEntered / quarter);
         coinsEntered = coinsEntered % quarter;
