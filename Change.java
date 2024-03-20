@@ -6,28 +6,37 @@ public class Change {
         double dime = 0.10;
         double nickel = 0.05;
         double penny = 0.01;
-        double totalAmount = 0.99;
+
 
         Scanner input = new Scanner(System.in);
         System.out.println("Enter US coins: ");
     
         double coinsEntered = input.nextDouble();
-        //double totalAmount = 0.99;
-        coinsEntered = totalAmount / quarter;
-        coinsEntered = totalAmount / dime;
-        coinsEntered = totalAmount / nickel;
-        coinsEntered = totalAmount / penny;
+        
+        
+        int numQuarter = (int) (coinsEntered / quarter);
+        coinsEntered = coinsEntered % quarter;
+        int numDime = (int) (coinsEntered / dime);
+        coinsEntered = coinsEntered % dime;
+        int numNickel = (int) (coinsEntered / nickel);
+        coinsEntered = coinsEntered % nickel;
+        int numPenny = (int) (coinsEntered / penny);
+        coinsEntered = coinsEntered % penny;
 
-        quarter = (int) (totalAmount / quarter);
-        dime = (int) (totalAmount / dime);
-        nickel = (int) (totalAmount / nickel);
-        penny = (int) (totalAmount / penny);
+        System.out.println("Number of quarters: " + numQuarter);
+        System.out.println("Number of dime:" + numDime);
+        System.out.println("Number of nickels: " + numNickel);
+        System.out.println("Number of pennies: " + numPenny);
 
 
-        System.out.println("Number of quarters given: " + quarter);
-        System.out.println("Number of dimes given: " + dime);
-        System.out.println("Number of nickels given: "  + nickel);
-        System.out.println("Number of pennies give: "  + penny);
+        
+        while (coinsEntered >= 0.01 && coinsEntered <= 0.99) {
+            
+          System.out.println(numQuarter);
+          System.out.println(numDime);
+          System.out.println(numNickel);
+          System.out.println(numPenny);
+        }         
 
     }
 }
