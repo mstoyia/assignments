@@ -1,0 +1,14 @@
+.form {
+    background-color:aqua;
+    text-align: center;
+    border: 1px solid black;
+    border-width: thin;
+    border-radius: 25px;
+    margin: auto;
+    padding: 20px;
+    max-width: fit-content;
+}
+
+.body {
+    
+}
