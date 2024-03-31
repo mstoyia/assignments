@@ -6,8 +6,18 @@ public class minThree {
         arr[1] = 15;
         arr[2] = 7;
 
-        for (int i = 2; i < arr.length; i++) {
-            System.out.println("The smallest of the three integers is: " + arr[i]);
+        int min = 0;
+
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = i + 1; j < arr.length; j++) {
+                if(arr[i] < arr[j]) {
+                    min = arr[i];
+                }else {
+                    min = arr[j];
+                }
+           }
         }
+        System.out.println("The smallest of the three integers is: " + min);
+          
     }
 }

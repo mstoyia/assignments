@@ -9,7 +9,6 @@ public class maxThree {
 
             for (int i = 0; i < arr.length; i++) {
                 for (int j = i + 1; j < arr.length; j++) {
-                    
                     if (arr[i] > arr[j]) {
                          max = arr[i];
                     } else {
@@ -18,9 +17,6 @@ public class maxThree {
                 }
             
             }
-            System.out.println("The largest of 3 integers is: " + max); 
-
-           
-        
+        System.out.println("The largest of 3 integers is: " + max);    
     }
 }
