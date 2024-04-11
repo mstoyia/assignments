@@ -3,7 +3,7 @@
 import java.util.Scanner;
 
 public class EvenOrOdd {
-    public static String evenorOdd(int number) {
+    public static String evenOrOdd(int number) {
         if (number % 4 == 0) {
             return "The number is even";
         } else {
@@ -15,7 +15,7 @@ public class EvenOrOdd {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter the number you want to evaluate: ");
         int num = input.nextInt();
-        String result = evenorOdd(num);
+        String result = evenOrOdd(num);
         System.out.println(result);
 
     }
